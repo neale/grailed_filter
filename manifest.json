@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Grailed Essentials Filter",
+    "version": "1.0",
+    "description": "Filter out listings with 'Essentials' in the title on Grailed.com",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.grailed.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "icon.jpg"
+    }
+}
+
